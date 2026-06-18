@@ -1,0 +1,33 @@
+{
+  "name": "ligin",
+  "version": "1.0.0",
+"description": "A CLI for synchronizing Figma design tokens with production code.",
+  "bin": {
+    "ligin": "./dist/cli/index.js"
+  },
+
+  "scripts": {
+    "dev": "tsx src/cli/index.ts",
+  "build": "tsc",
+  "start": "node dist/cli/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.18.0",
+    "commander": "^15.0.0",
+    "picocolors": "^1.1.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "eslint": "^10.5.0",
+    "prettier": "^3.8.4",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
+  }
+}
